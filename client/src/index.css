@@ -42,6 +42,12 @@ z-index: 49;
 .dot:last-child {
   margin-right: 0;
 }
+/* Your CSS file or Tailwind CSS file */
+.custom-horizontal-length {
+  width: 25%;
+   /* Adjust the width as needed */
+}
+
 
 .dot:nth-child(1) {
   animation-delay: -0.3s;
@@ -78,6 +84,7 @@ z-index: 49;
 @layer base {
   :root {
     --color-bg: 227 227 227;
+    --color-bg2: 31 31 31;
     --color-primary: 255 255 255;
     --color-secondary:255 255 255;
     --color-ascent1: 0 0 0;
@@ -89,6 +96,7 @@ z-index: 49;
   /* //15 23 42  21 30 49*/
   [data-theme="dark"] {
      --color-bg: 31 31 31;
+     --color-bg2: 255 255 255;
      --color-primary: 12 12 12;
     --color-secondary: 12 12 12;
     --color-ascent1: 255 255 255;
