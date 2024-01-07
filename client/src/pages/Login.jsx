@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { useForm } from 'react-hook-form';
 import { CustomButton, Loading, TextInput } from '../components';
-import backgroundImage from '../assets/background.jpg'; // Replace with the actual path to your image
+import backgroundImage from '../assets/background.jpg';
 
 const Login = () => {
     const {
@@ -20,27 +20,17 @@ const Login = () => {
 
     return (
         <div className="relative bg-primary w-full h-screen flex items-center justify-center">
-            
-            {/* Image */}
-            <img
-                src={backgroundImage}
-                alt="Background"
-                className="absolute   w-3/4 h-4/5 object-cover z-0"
-            
-></img>
             {/* Container for all content */}
-            <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+            <div className="absolute top-5/6 bottom-5/6 left-5/6 w-5/6 h-5/6 flex flex-col items-center justify-center bg-cover" style={{ backgroundImage: `url(${backgroundImage})` }}>
                 {/* LEFT */}
-
-                {/* RIGHT */}
-                <div className="w-full md:w-2/3 h-full 2xl:h-5/6 py-8 lg:py-0 bg-opacity-0 flex bg-primary rounded-xl overflow-hidden relative flex-col items-center justify-center">
-                
-
-                <div className="flex flex-col items-center mb-6 text-white">
-                    <span className="transition-font-size text-7xl md:text-5xl lg:text-7xl font-semibold mb-2">PortPhilio</span>
-                    <p className="text-base font-semibold">&nbsp;&nbsp;Reach further.</p>
-                </div>
-                    <form className="w-full lg:w-1/2 p-10 2xl:px-10 flex flex-col items-center">
+                <div className="w-full h-full flex flex-col items-center justify-center">
+                   
+                    {/* RIGHT */}
+                    <form className="w-full bg-primary max-w-custom lg:w-1/2 h-full p-10 2xl:px-10 flex flex-col items-center">
+                    <div className="flex flex-col items-center mb-6 text-white">
+                        <span className="transition-font-size text-7xl md:text-7xl lg:text-7xl font-semibold mb-2">PortPhilio</span>
+                        <p className="text-base font-semibold">&nbsp;&nbsp;Reach further.</p>
+                    </div>
                         <TextInput
                             name="email"
                             placeholder="johndoe@johndoe.com"
@@ -49,7 +39,7 @@ const Login = () => {
                             register={register('email', {
                                 required: 'Email Address is required!',
                             })}
-                            styles="w-full border rounded-3xl"
+                            styles="w-full  border rounded-3xl"
                             labelStyle="ml-2"
                             error={errors.email ? errors.email.message : ' '}
                         />
@@ -61,8 +51,8 @@ const Login = () => {
                             register={register('password', {
                                 required: 'Password is required!',
                             })}
-                            styles="w-full border rounded-3xl "
-                            labelStyle="ml-2 "
+                            styles="w-full border rounded-3xl"
+                            labelStyle="ml-2"
                             error={errors.password ? errors.password.message : ' '}
                         />
 
@@ -92,15 +82,8 @@ const Login = () => {
                             />
                         )}
                     </form>
-                    
-                    <div className="absolute top-1/4 left-0 w-full h-full bg-black opacity-50">
                 </div>
-                
             </div>
-           
-            </div>
-            
-            
         </div>
     );
 };
