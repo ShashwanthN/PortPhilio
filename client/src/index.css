@@ -44,7 +44,7 @@ z-index: 49;
 }
 /* Your CSS file or Tailwind CSS file */
 .custom-horizontal-length {
-  width: 35%;
+  width: 100px;
    /* Adjust the width as needed */
 }
 .box-shadow {

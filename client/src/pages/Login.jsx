@@ -26,10 +26,10 @@ const Login = () => {
                 <div className="w-full h-full flex flex-col items-center justify-center">
                    
                     {/* RIGHT */}
-                    <form className="w-full bg-primary max-w-custom lg:w-1/2 h-full p-10 2xl:px-10 flex flex-col items-center">
-                    <div className="flex flex-col items-center mb-6 text-white">
-                        <span className="transition-font-size text-7xl md:text-7xl lg:text-7xl font-semibold mb-2">PortPhilio</span>
-                        <p className="text-base font-semibold">&nbsp;&nbsp;Reach further.</p>
+                    <form className="w-full bg-ascent-3 max-w-custom-1 lg:w-1/2 h-full p-10 2xl:px-10 flex flex-col justify-center  items-center">
+                    <div className="flex flex-col items-center mb-10 ">
+                        <span className="transition-font-size text-7xl md:text-7xl lg:text-7xl text-ascent-1 font-semibold mb-1">PortPhilio</span>
+                        <p className="text-base font-semibold text-ascent-1">&nbsp;&nbsp;Reach further.</p>
                     </div>
                         <TextInput
                             name="email"
@@ -39,8 +39,8 @@ const Login = () => {
                             register={register('email', {
                                 required: 'Email Address is required!',
                             })}
-                            styles="w-full  border rounded-3xl"
-                            labelStyle="ml-2"
+                            styles="w-full border rounded-3xl"
+                            labelStyle="ml-2 "
                             error={errors.email ? errors.email.message : ' '}
                         />
                         <TextInput
@@ -51,7 +51,7 @@ const Login = () => {
                             register={register('password', {
                                 required: 'Password is required!',
                             })}
-                            styles="w-full border rounded-3xl"
+                            styles="w-full  border rounded-3xl"
                             labelStyle="ml-2"
                             error={errors.password ? errors.password.message : ' '}
                         />
@@ -59,8 +59,8 @@ const Login = () => {
                         <div className="mt-2 ml-auto text-right">
                             <Link
                                 to="/reset-password"
-                                className='text-sm text-white'>
-                                Can't Remember?
+                                className='text-sm text-ascent-1'>
+                                Can't Remember?&nbsp;
                             </Link>
                         </div>
                         {errMsg?.message && (
@@ -77,7 +77,7 @@ const Login = () => {
                         ) : (
                             <CustomButton
                                 type='submit'
-                                containerStyles={`inline-flex justify-center border-1 border-black rounded-3xl px-2 py-2 text-md font-semibold text-black outline-none custom-horizontal-length mt-2`}
+                                containerStyles={`inline-flex justify-center border-1 border-black max-w-custom-2 rounded-3xl px-2 py-2 text-md font-semibold text-black outline-none custom-horizontal-length mt-2`}
                                 title='Explore.'
                             />
                         )}

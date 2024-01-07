@@ -22,8 +22,9 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        'custom': '400px', // Add your custom value here
-      },
+        'custom-1': '400px',
+        'custom-2': '100px', // Add your custom value here
+       },
     },
   },
   plugins: [],
