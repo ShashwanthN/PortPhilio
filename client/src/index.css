@@ -66,6 +66,20 @@ z-index: 49;
 .dot:nth-child(3) {
   animation-delay: 0.1s;
 }
+.transition-transform {
+  transition: font-size 1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .hidden-md {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .custom-horizontal-length {
+    min-width: 220px; /* Adjust the minimum width as needed */
+  }
+}
 
 @keyframes pulse {
   0% {
@@ -95,10 +109,15 @@ z-index: 49;
     --color-secondary:255 255 255;
     --color-ascent1: 0 0 0;
     --color-ascent2: 89 91 100;
+    --color-ascent3: 255 255 255;
+
     --color-blue: 6 90 216;
     --color-white: 255 255 255;
 
   }
+
+
+  
   /* //15 23 42  21 30 49*/
   [data-theme="dark"] {
      --color-bg: 31 31 31;
@@ -107,6 +126,7 @@ z-index: 49;
     --color-secondary: 12 12 12;
     --color-ascent1: 255 255 255;
     --color-ascent2: 164 161 162;
+    --color-ascent3: 12 12 12;
     --color-blue: 6 90 216;
     /* //16 176 255; */
     --color-white: 255 255 255;
