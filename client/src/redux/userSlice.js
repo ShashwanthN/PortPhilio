@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
 const initialState = {
     user: JSON.parse(window?.localStorage.getItem("user")) ?? {},
     edit: false,
@@ -23,21 +22,28 @@ const userSlice = createSlice({
         },
     },
 });
-export  default userSlice.reducer;
 
-export function UserLogin(user){
-    return (dispatch, getState) => {
-        dispatch(userState.actions.login(user));
+// Export the reducer
+export default userSlice.reducer;
+
+// Export the actions directly
+export const { login, logout, updateProfile } = userSlice.actions;
+
+// Action creators
+export function userLogin(user) {
+    return (dispatch) => {
+        dispatch(login(user));
     };
 }
-export function Logout(user){
-    return (dispatch, getState) => {
-        dispatch(userState.actions.login(user));
+
+export function userLogout() {
+    return (dispatch) => {
+        dispatch(logout());
     };
 }
 
-export function updateProfile(val){
-    return (dispatch, getState) => {
-        dispatch(userState.actions.updateProfile(val));
+export function updateUserProfile(val) {
+    return (dispatch) => {
+        dispatch(updateProfile(val));
     };
 }

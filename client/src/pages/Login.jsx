@@ -20,9 +20,9 @@ const Login = () => {
 
     return (
         <div className="bg-primary w-full h-screen flex items-center justify-center">
-            <div className="w-full md:w-2/3 h-fit lg:h-full 2xl:h-5/6 py-8 lg:py-0 flex bg-primary rounded-xl overflow-hidden relative">
+            <div className=" w-full md:w-2/3 h-fit lg:h-full 2xl:h-5/6 py-8 lg:py-0 flex bg-primary rounded-xl overflow-hidden relative">
                 {/* LEFT */}
-                <div className="w-full lg:w-1/2 p-10 2xl:px-20 flex flex-col justify-center">
+                <div className=" w-full lg:w-1/2  p-10 2xl:px-20 flex flex-col justify-center">
                     <span className="text-7xl text-ascent-1 font-semibold ">PortPhilio</span>
                     <p className="text-ascent-1 text-base font-semibold">&nbsp;&nbsp;Reach further.</p>
                 </div>
@@ -62,7 +62,7 @@ const Login = () => {
                         <div className="mt-2 ml-auto text-right"> {/* Adjusted the container for "Can't Remember?" link */}
                             <Link
                                 to="/reset-password"
-                                className='text-sm text-ascent-1'>
+                                className='text-sm text-ascent-2'>
                                 Can't Remember?
                             </Link>
                         </div>
@@ -80,11 +80,20 @@ const Login = () => {
                         ) : (
                             <CustomButton
                                 type='submit'
-                                containerStyles={`inline flex justify-center border-1 border-black rounded-3xl px-2 py-1 text-md font-semibold text-black outline-none custom-horizontal-length mt-2`}
-                                title='Login'
+                                containerStyles={`inline flex box-shadow justify-center border-1 border-black rounded-3xl px-2 py-1 text-md font-semibold text-black outline-none custom-horizontal-length mt-2`}
+                                title='Explore.'
                             />
                         )}
                     </form>
+                    <p className='text-ascent-2 text-sm text-center'>
+                        New around here?
+                        <Link
+                        to='/register'
+                        className='text-ascent-2 font-semibold ml-2 cursor-pointer'
+                        >
+                            Create an account
+                        </Link>
+                    </p>
                 </div>
             </div>
         </div>
