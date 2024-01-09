@@ -9,9 +9,9 @@ const TextInput = React.forwardRef(
 
     ) => {
         return (
-            <div className='w-full flex flex-col mt-3'>
+            <div className='w-full text-ascent-1 flex flex-col mt-3'>
                 {label && (
-                    <p className={`text-ascent-1 text-sm mb-2 ${labelStyles}`}>{label}</p>
+                    <p className={`text-ascent-1 text-sm mb-2 font-semibold${labelStyles}`}>{label}</p>
 )}
                 <div>
                     <input type={type} 

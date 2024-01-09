@@ -9,6 +9,19 @@
    -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
 }
+@font-face {
+  font-family: 'elika';
+  src: url('./assets/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'elika', sans-serif; /* Use the custom font here */
+  font-weight: normal;
+  color: var(--color-primary);
+}
+
 
 .topbar{
 position: sticky;
@@ -103,13 +116,15 @@ z-index: 49;
 
 @layer base {
   :root {
-    --color-bg: 227 227 227;
-    --color-bg2: 31 31 31;
+    --color-bg: 255 255 255;
+    --color-bg2: 0 0 0;
     --color-primary: 255 255 255;
     --color-secondary:255 255 255;
     --color-ascent1: 0 0 0;
     --color-ascent2: 89 91 100;
     --color-ascent3: 255 255 255;
+    --color-ascent4: 135 203 40;
+
 
     --color-blue: 6 90 216;
     --color-white: 255 255 255;
@@ -120,15 +135,17 @@ z-index: 49;
   
   /* //15 23 42  21 30 49*/
   [data-theme="dark"] {
-     --color-bg: 31 31 31;
+     --color-bg: 0 0 0;
      --color-bg2: 255 255 255;
-     --color-primary: 12 12 12;
-    --color-secondary: 12 12 12;
+     --color-primary: 0 0 0;
+    --color-secondary: 0 0 0;
     --color-ascent1: 255 255 255;
     --color-ascent2: 164 161 162;
-    --color-ascent3: 12 12 12;
+    --color-ascent3: 0 0 0;
+    --color-ascent4: 149 255 0;
     --color-blue: 6 90 216;
     /* //16 176 255; */
     --color-white: 255 255 255;
+    
   }
 }
