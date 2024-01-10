@@ -18,7 +18,7 @@ const TextInput = React.forwardRef(
                     name={name} 
                     placeholder={placeholder} 
                     ref={ref}
-                        className={`bg-secondary rounded border-2 border-ascent-1  outline-none text-sm text-ascent-1 px-4 py-3 placeholder:text-ascent-2 ${styles}`}
+                        className={`bg-bg rounded border-2 border-ascent-1  outline-none text-sm text-ascent-2 px-4 py-3 placeholder:text-ascent-4 ${styles}`}
                         {...register}
                         aria-invalid={error ? "true" : "false"}
                     
@@ -29,7 +29,7 @@ const TextInput = React.forwardRef(
                     />
                 </div>
                 {error && (
-                <span className= 'text-xs text-[#f6494fe] mt-0.5'>{error}</span>
+                <span className= 'text-xs text-ascent-1 mt-1'>{error}</span>
                 )}
             </div>
         )

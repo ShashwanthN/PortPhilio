@@ -10,8 +10,42 @@
   scrollbar-width: none;
 }
 @font-face {
-  font-family: 'elika';
-  src: url('./assets/Poppins-Regular.ttf') format('truetype');
+  font-family: 'reg';
+  src: url('./assets/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'med';
+  src: url('./assets/Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bol';
+  src: url('./assets/Roboto-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lig';
+  src: url('./assets/Roboto-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bolit';
+  src: url('./assets/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'medit';
+  src: url('./assets/Roboto-MediumItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,8 +55,45 @@ body {
   font-weight: normal;
   color: var(--color-primary);
 }
+.reg {
+  font-family: 'reg', sans-serif; /* Fallback to a generic sans-serif font if needed */
+  font-weight: normal;
+}
+
+.med {
+  font-family: 'med', sans-serif;
+  font-weight: 500; /* Use the medium font variant */
+}
+
+.bol {
+  font-family: 'bol', sans-serif;
+  font-weight: normal;
+}
+.lig {
+  font-family: 'lig', sans-serif; /* Fallback to a generic sans-serif font if needed */
+  font-weight: normal;
+}
+
+.medit {
+  font-family: 'medit', sans-serif;
+  font-weight: 500; /* Use the medium font variant */
+}
+
+.bolit {
+  font-family: 'bolit', sans-serif;
+  font-weight: normal;
+}
+
+.definecolor{
+  background-color: 255 255 255;
+  
+  
 
 
+
+}
+
+.bg 
 .topbar{
 position: sticky;
 top: 0px;
@@ -117,13 +188,13 @@ z-index: 49;
 @layer base {
   :root {
     --color-bg: 255 255 255;
-    --color-bg2: 0 0 0;
-    --color-primary: 255 255 255;
-    --color-secondary:255 255 255;
-    --color-ascent1: 0 0 0;
-    --color-ascent2: 89 91 100;
-    --color-ascent3: 255 255 255;
-    --color-ascent4: 135 203 40;
+    --color-bg2: 20 20 20;
+    --color-primary: 241 106 31;
+    --color-secondary:86 81 167;
+    --color-ascent1: 241 106 31;
+    --color-ascent2: 8 0 37;
+    --color-ascent3: 254 253 242;
+    --color-ascent4: 94 130 143;
 
 
     --color-blue: 6 90 216;
@@ -135,14 +206,14 @@ z-index: 49;
   
   /* //15 23 42  21 30 49*/
   [data-theme="dark"] {
-     --color-bg: 0 0 0;
+     --color-bg: 20 20 20;
      --color-bg2: 255 255 255;
-     --color-primary: 0 0 0;
-    --color-secondary: 0 0 0;
-    --color-ascent1: 255 255 255;
+    --color-primary: 20 20 20;
+    --color-secondary: 20 20 20;
+    --color-ascent1: 241 106 32;
     --color-ascent2: 164 161 162;
-    --color-ascent3: 0 0 0;
-    --color-ascent4: 149 255 0;
+    --color-ascent3: 20 20 20;
+    --color-ascent4: 94 130 143;
     --color-blue: 6 90 216;
     /* //16 176 255; */
     --color-white: 255 255 255;

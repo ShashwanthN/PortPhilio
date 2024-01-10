@@ -31,10 +31,11 @@ const Login = () => {
     const dispatch = useDispatch();
 
     const logoSrc = theme === 'dark' ? logodark : logolight;
+    
 
     return (
         <div>
-            <div className="relative bg-primary w-full h-screen flex items-center justify-center">
+            <div className="relative bg-ascent-1 w-full h-screen flex items-center justify-center">
                 {/* Container for all content */}
                 <div className="absolute top-5/6 bottom-5/6 left-5/6 w-5/6 h-5/6 flex flex-col items-center justify-center bg-cover" style={{ backgroundImage: `url(${backgroundImage})` }}>
                     {/* LEFT */}
@@ -43,8 +44,8 @@ const Login = () => {
                         {/* RIGHT */}
                         <form className="w-full bg-ascent-3 max-w-custom-1 lg:w-1/2 h-full p-10 2xl:px-10 flex flex-col justify-center items-center relative" onSubmit={handleSubmit(onSubmit)}>
                             <div className="flex flex-col items-center mb-10 ">
-                                {/* Replace text with custom logo */}
-                                <img src={logoSrc} alt="" style={{ width: '600px', height: '' }} />
+                                {/* Replace text with custom logo 
+                                <img src={logoSrc} alt="" style={{ width: '600px', height: '' }} />*/}
                             </div>
 
                             <TextInput
@@ -75,7 +76,7 @@ const Login = () => {
                             <div className="mt-2 ml-auto text-right">
                                 <Link
                                     to="/reset-password"
-                                    className='text-sm text-ascent-2'>
+                                    className='text-sm text-ascent-4'>
                                     Can't Remember?&nbsp;
                                 </Link>
                             </div>

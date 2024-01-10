@@ -2,7 +2,7 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     colors: {
-      bgColor: "rgb(var(--color-bg) / <alpha-value>)",
+      bg: "rgb(var(--color-bg) / <alpha-value>)",
       primary: "rgb(var(--color-primary) / <alpha-value>)",
       secondary: "rgb(var(--color-secondary) / <alpha-value>)",
       blue: "rgb(var(--color-blue) / <alpha-value>)",
@@ -24,7 +24,7 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        'custom-1': '400px',
+        'custom-1': '420px',
         'custom-2': '100px', // Add your custom value here
        },
     },

@@ -34,7 +34,7 @@ const Register = () => {
                         <form className="w-full bg-ascent-3 max-w-custom-1 lg:w-1/2 h-full p-10 2xl:px-10 flex flex-col justify-center items-center relative"onSubmit={handleSubmit(onsubmit)}>
                             <div className="flex flex-col items-center mb-10 ">
                                 <span className="transition-font-size text-7xl md:text-7xl lg:text-7xl text-ascent-1 font-semibold mb-1">PortPhilio</span>
-                                <p className="text-base font-semibold text-ascent-1">&nbsp;&nbsp;Reach further.</p>
+                                <p className="text-base font-semibold text-ascent-1">&nbsp;&nbsp;Reach.</p>
                             </div>
                         
                             <TextInput
