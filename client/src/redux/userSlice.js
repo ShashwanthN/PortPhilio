@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+import {user} from "../assets/data"
 
 const initialState = {
-    user: JSON.parse(window?.localStorage.getItem("user")) ?? {},
+    user: JSON.parse(window?.localStorage.getItem("user")) ?? user,
     edit: false,
 };
 
@@ -36,14 +37,14 @@ export function userLogin(user) {
     };
 }
 
-export function userLogout() {
+export function Logout() {
     return (dispatch) => {
-        dispatch(logout());
+        dispatch(userSlice.actions.logout());
     };
 }
 
 export function updateUserProfile(val) {
     return (dispatch) => {
-        dispatch(updateProfile(val));
+        dispatch(userSlice.actions.updateProfile(val));
     };
 }

@@ -3,10 +3,13 @@ module.exports = {
   theme: {
     colors: {
       bg: "rgb(var(--color-bg) / <alpha-value>)",
+      bg2: "rgb(var(--color-bg2) / <alpha-value>)",
       primary: "rgb(var(--color-primary) / <alpha-value>)",
       secondary: "rgb(var(--color-secondary) / <alpha-value>)",
-      blue: "rgb(var(--color-blue) / <alpha-value>)",
-      white: "rgb(var(--color-white) / <alpha-value>)",
+      grey: "rgb(var(--color-grey) / <alpha-value>)",
+      placehold: "rgb(var(--color-placehold) / <alpha-value>)",
+     
+     
       ascent: {
         1: "rgb(var(--color-ascent1) / <alpha-value>)",
         2: "rgb(var(--color-ascent2) / <alpha-value>)",
@@ -16,6 +19,7 @@ module.exports = {
 
     },
     screens: {
+      xsm: "300px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -24,8 +28,8 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        'custom-1': '420px',
-        'custom-2': '100px', // Add your custom value here
+        'custom-1': '500px',
+        'custom-2': '200px', 
        },
     },
     

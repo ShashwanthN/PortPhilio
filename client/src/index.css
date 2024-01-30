@@ -11,45 +11,50 @@
 }
 @font-face {
   font-family: 'reg';
-  src: url('./assets/Roboto-Regular.ttf') format('truetype');
+  src: url('./assets/RobotoMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'med';
-  src: url('./assets/Roboto-Medium.ttf') format('truetype');
+  src: url('./assets/RobotoMono-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'bol';
-  src: url('./assets/Roboto-Bold.ttf') format('truetype');
+  src: url('./assets/RobotoMono-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'lig';
-  src: url('./assets/Roboto-Light.ttf') format('truetype');
+  src: url('./assets/RobotoMono-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'bolit';
-  src: url('./assets/Roboto-BoldItalic.ttf') format('truetype');
+  src: url('./assets/RobotoMono-BoldItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'medit';
-  src: url('./assets/Roboto-MediumItalic.ttf') format('truetype');
+  src: url('./assets/RobotoMono-MediumItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'sem';
+  src: url('./assets/RobotoMono-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: 'elika', sans-serif; /* Use the custom font here */
   font-weight: normal;
@@ -62,7 +67,7 @@ body {
 
 .med {
   font-family: 'med', sans-serif;
-  font-weight: 500; /* Use the medium font variant */
+  font-weight: normal; /* Use the medium font variant */
 }
 
 .bol {
@@ -76,7 +81,7 @@ body {
 
 .medit {
   font-family: 'medit', sans-serif;
-  font-weight: 500; /* Use the medium font variant */
+  font-weight: normal; /* Use the medium font variant */
 }
 
 .bolit {
@@ -84,16 +89,16 @@ body {
   font-weight: normal;
 }
 
-.definecolor{
-  background-color: 255 255 255;
-  
-  
-
-
-
+.sem {
+  font-family: 'sem', sans-serif;
+  font-weight: normal;
 }
 
-.bg 
+.definecolor{
+  background-color: 255 255 255;
+}
+
+
 .topbar{
 position: sticky;
 top: 0px;
@@ -127,8 +132,9 @@ z-index: 49;
   margin-right: 0;
 }
 /* Your CSS file or Tailwind CSS file */
-.custom-horizontal-length {
-  width: 100px;
+.custom-button-length {
+  width: 130px;
+  
    /* Adjust the width as needed */
 }
 .box-shadow {
@@ -153,18 +159,125 @@ z-index: 49;
 .transition-transform {
   transition: font-size 1s ease-in-out;
 }
+.border-dashed-custom {
+  border-style: dashed;
+  border-width: 2px;
+  /* Add any additional styling properties for the dashed border here */
+}
 
 @media (max-width: 600px) {
   .hidden-md {
     display: none;
   }
 }
+.content-container {
+  padding-top: 20px;
+}
+
+
 @media (max-width: 600px) {
-  .custom-horizontal-length {
-    min-width: 220px; /* Adjust the minimum width as needed */
+  .content-container {
+    padding-top: 40px;
+  }
+}
+@media (max-height: 520px) {
+  .bghide {
+    background-color: #141414;
+    
   }
 }
 
+.backgroundImage{
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  border: 70px  solid #f16a1f;
+
+}
+
+@media (max-height: 500px) {
+  .backgroundImage {
+    border: 20px solid #f16a1f;
+  }
+}
+
+:root {
+  --base-border-size: 40px; /* Initial border size */
+}
+
+.backgroundImage {
+  width: 100%; /* Initial width */
+  border: var(--base-border-size) solid #f16a1f;
+  transition: border 0.5s ease-in-out;
+
+  /* Other styles for your component go here */
+}
+
+
+
+/* Define the gradient animation keyframes */
+
+@media (max-height: 800px) {
+  .backgroundImage {
+    --base-border-size: 20px; /* Adjust the border size for smaller screens */
+  }
+}
+@media (max-width: 400px) {
+  .backgroundImage {
+    transition: border 0.5s ease-in-out;
+    border: none; /* Adjust the border size for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .backgroundImage {
+    transition: border 0.5s ease-in-out;
+    border: none; /* Adjust the border size for smaller screens */
+  }
+}
+@media (max-width:600px) {
+  .backgroundImage {
+    --base-border-size: 15px; /* Adjust the border size for smaller screens */
+  }
+}
+@media (max-width: 800px) {
+  .backgroundImage {
+    --base-border-size: 20px; /* Adjust the border size for smaller screens */
+  }
+}
+
+@media (max-height: 600px) {
+  .backgroundImage {
+    --base-border-size: 10px; /* Adjust the border size for even smaller screens */
+  }
+}
+
+@media (max-height: 720px) {
+  .textsizered {
+    text-size-adjust: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .custom-horizontal-length {
+    min-width: 600px; /* Adjust the minimum width as needed */
+  
+  }
+  .profilepic{
+    border-radius: 100%;
+
+  }
+  .profilecardhide{
+    display :none;
+  }
+
+  
+}
+@media (min-width: 600px) {
+  .search {
+    display: none; /* Adjust the minimum width as needed */
+  }
+  
+  
+}
 @keyframes pulse {
   0% {
     transform: scale(0.8);
@@ -184,21 +297,80 @@ z-index: 49;
     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
   }
 }
+.animated-gradient {
+  animation: animateBg 20s linear infinite;
+  background-image: linear-gradient(45deg, #041125, #00051a, #18003e, #3d025f, #010b1e, #01040c);
+  background-size: 500% 100%;
+}
+
+@keyframes animateBg {
+  0% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
+}
+
+.borderform {
+ border: dashed 2px #f16a1f;
+ transition: border 0.8s ease-in-out; 
+
+}
+.borderform:hover {
+  
+  border: dashed 2px #fff;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  background: linear-gradient(to right, #f16a1f);
+  transition: background 3s ease-in-out, color 2s ease-in-out; 
+  transition: color 1s ease-in-out; 
+  transition: border 0.8s ease-in-out; 
+}
+
+.button:hover {
+  background: linear-gradient(45deg, #f16a1f, #f16a1f, #ff8031, #f16a1f, #f16a1f);
+  background-size: 200% 200%;
+  color: #fff;
+ border: dashed 2px; 
+  animation: gradientAnimation 10s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.sidebar{
+  position: sticky;
+  height: 100%;
+  overflow: visible;
+}
+
+
+
 
 @layer base {
   :root {
-    --color-bg: 255 255 255;
-    --color-bg2: 20 20 20;
-    --color-primary: 241 106 31;
-    --color-secondary:86 81 167;
+    --color-bg: 218 224 230;
+    --color-bg2: 26 26 27;
+    --color-primary: 255 255 255;
+    --color-secondary: 255 255 255;
     --color-ascent1: 241 106 31;
     --color-ascent2: 8 0 37;
-    --color-ascent3: 254 253 242;
+    --color-ascent3: 254 253 248;
     --color-ascent4: 94 130 143;
 
 
-    --color-blue: 6 90 216;
-    --color-white: 255 255 255;
+    --color-grey: 210 210 210;
+    --color-placehold: 150 150 150;
+    --color-bgBorder: 244 243 232;
 
   }
 
@@ -206,17 +378,19 @@ z-index: 49;
   
   /* //15 23 42  21 30 49*/
   [data-theme="dark"] {
-     --color-bg: 20 20 20;
+     --color-bg: 0 0 0;
      --color-bg2: 255 255 255;
     --color-primary: 20 20 20;
-    --color-secondary: 20 20 20;
+    --color-secondary: 26 26 27;
     --color-ascent1: 241 106 32;
     --color-ascent2: 164 161 162;
     --color-ascent3: 20 20 20;
     --color-ascent4: 94 130 143;
     --color-blue: 6 90 216;
     /* //16 176 255; */
-    --color-white: 255 255 255;
+    --color-grey: 48 48 48;
+    --color-white: 26 26 27;
+    --color-bgBorder: 48 48 48;
     
   }
 }
