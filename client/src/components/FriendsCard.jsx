@@ -5,7 +5,7 @@ import { NoProfile } from '../assets'
 const FriendsCard = ({friends}) => {
   return (
     <div className='w-full bg-primary shadow-sm rounded-lg px-6 py-5 border-2 border-secondary'>
-        <div className='flex items-center justify-between text-xl text-ascent-1 pb-2 border-b border-ascent-1'>
+        <div className='flex items-center lig font-thin justify-between text-xl text-ascent-1 pb-2 border-b border-ascent-1'>
             <span> Friends </span>
             <span>{friends?.length}</span>
         </div>

@@ -18,7 +18,7 @@ const TextInputregister = React.forwardRef(
                     name={name} 
                     placeholder={placeholder} 
                     ref={ref}
-                        className={`bg-bg2 border-rounded border-2 border-bg reg border-dashed-custom outline-none text-sm text-ascent-3 px-4 py-3 placeholder:text-ascent-4 ${styles}`}
+                        className={`bg-bg2 border-rounded border-2 border-bg hover:bg- reg border-dashed-custom outline-none text-sm text-ascent-3 px-4 py-3 placeholder:text-ascent-4 ${styles}`}
                         {...register}
                         aria-invalid={error ? "true" : "false"}
                     

@@ -27,6 +27,7 @@
     const dispatch = useDispatch();
 
     return (
+      
       <div className="absolute w-full h-screen bg-bg  overflow-scroll items-center justify-center backgroundImage">
         <div className="  sm-hidden  h-screen flex flex-col items-center overflow-scroll">
           <div className="w-full h-screen  flex flex-col  items-center ">
@@ -46,7 +47,7 @@
                 register={register('email', {
                   required: 'Email Address is required!',
                 })}
-                styles="w-full border borderform rounded-3xl"
+                styles="w-full border borderform hover:bg-secondary rounded-3xl"
                 labelStyle="ml-2 "
                 error={errors.email ? errors.email.message : ' '}
               />
@@ -103,6 +104,7 @@
           </div>
         </div>
       </div>
+    
     );
   };
 

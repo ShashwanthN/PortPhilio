@@ -79,6 +79,15 @@ body {
   font-weight: normal;
 }
 
+.postcreate {
+  align-items: center;
+  height: max-content;
+  
+  
+}
+
+
+
 .medit {
   font-family: 'medit', sans-serif;
   font-weight: normal; /* Use the medium font variant */
